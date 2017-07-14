@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  sdc.devops.sample.api.core:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "80"

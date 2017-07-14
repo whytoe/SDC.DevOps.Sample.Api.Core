@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  sdc.devops.sample.api.core:
+    image: sdc.devops.sample.api.core
+    build:
+      context: ./Sdc.DevOps.Sample.Api.Core
+      dockerfile: Dockerfile
