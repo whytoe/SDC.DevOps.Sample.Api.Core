@@ -1,6 +1,8 @@
-FROM microsoft/aspnetcore:1.1
-ARG source
+FROM microsoft/aspnetcore-build
 WORKDIR /app
-EXPOSE 80
-COPY ${source:-obj/Docker/publish} .
-ENTRYPOINT ["dotnet", "Sdc.DevOps.Sample.Api.Core.dll"]
+
+COPY *.csproj .
+RUN dotnet restore
+
+COPY . .
+RUN dotnet publish --output /out/ --configuration Release
