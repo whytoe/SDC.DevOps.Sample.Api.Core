@@ -1,0 +1,1 @@
+This repo is synced with https://github.com/Steve-Boyd/SDC.DevOps.Sample.Api.Core for building in Docker Cloud.
