@@ -8,4 +8,4 @@ EXPOSE 50600
 EXPOSE 50599
 
 COPY . .
-RUN dotnet publish --output /out/ --configuration Release
+CMD dotnet publish --output /out/ --configuration Release
